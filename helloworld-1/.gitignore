@@ -1,33 +1,37 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Compiled class files
+*.class
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse/STS Specific
+.settings/
 .project
-.settings
-.springBeans
-.sts4-cache
+.classpath
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# Maven
+target/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Gradle
+.gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# IDE Directories
+.idea/
+*.iml
+*.iws
+
+# OS Files
+.DS_Store
+Thumbs.db
