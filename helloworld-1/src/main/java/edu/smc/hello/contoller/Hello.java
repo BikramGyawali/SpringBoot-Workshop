@@ -8,6 +8,6 @@ public class Hello {
 	
 	@GetMapping("/hello")
  public String testApi() {
-	 return "Hello everyone";
+	 return "seeing the use of dependencies";
  }
 }
