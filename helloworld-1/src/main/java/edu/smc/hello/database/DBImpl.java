@@ -10,7 +10,7 @@ public class DBImpl implements DBInterface {
 	
 	@Autowired
 	Mysql database;
-  public String getData() {
+  public String selectData() {
 //	  return "Here is the interface";
 		return database.getData();
   }

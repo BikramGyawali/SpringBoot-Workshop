@@ -4,5 +4,5 @@ package edu.smc.hello.database;
 
 
 public interface DBInterface {
-  public String getData();
+  public String selectData();
 }
