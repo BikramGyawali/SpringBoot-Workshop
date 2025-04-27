@@ -12,7 +12,7 @@ public class DatabaseTest {
 	
 	@Test
 	public void databaseTester() {
-		String data = dbInterface.getData();
+		String data = dbInterface.selectData();
 		System.out.println(data);
 		
 	}
