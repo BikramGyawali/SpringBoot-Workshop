@@ -1,5 +1,8 @@
 package edu.smc.hello.database;
 
-public class DBInterface {
 
+
+
+public interface DBInterface {
+  public String getData();
 }
