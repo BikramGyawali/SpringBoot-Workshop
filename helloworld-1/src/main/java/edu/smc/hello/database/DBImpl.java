@@ -9,9 +9,10 @@ import org.springframework.stereotype.Component;
 public class DBImpl implements DBInterface {
 	
 	@Autowired
-	Mysql database;
+//	Mysql database;
+	Mongo mongo;
   public String selectData() {
 //	  return "Here is the interface";
-		return database.getData();
+		return mongo.fetchData(false);
   }
 }
