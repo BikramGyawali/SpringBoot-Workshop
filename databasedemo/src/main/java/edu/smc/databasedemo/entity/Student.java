@@ -18,7 +18,7 @@ public class Student {
  public int age ;
  
  @Column (name="program")  // connect with program column of database table
- public String Program;
+ public String program;
 public int getId() {
 	return id;
 }
@@ -44,7 +44,8 @@ public String getProgram() {
 public void setProgram(String program) {
 	this.program = program;
 }
- 
+  
+// constructor for update/delete
 public Student(int id, String name, int age, String program) {
 	
 	this.id = id;
@@ -53,9 +54,12 @@ public Student(int id, String name, int age, String program) {
 	
 	this.program = program;
 }
+
 public Student() {
-	
+	// empty constructor for the intialization
 }
+
+// for create because id is auto increment so no id 
 public Student(String name, int age, String program) {
 //	super();  remove super because constructor always call for first time
 	this.name = name;
