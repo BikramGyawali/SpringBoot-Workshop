@@ -65,6 +65,10 @@ public Student(String name, int age, String program) {
 	this.name = name;
 	this.age = age;
 	this.program = program;
+}
+@Override
+public String toString() {
+	return "\nStudent [id=" + id + ", name=" + name + ", age=" + age + ", program=" + program + "]\n";
 } 
   	
 }
