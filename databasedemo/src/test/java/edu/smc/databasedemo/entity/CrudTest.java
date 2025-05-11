@@ -1,6 +1,7 @@
 package edu.smc.databasedemo.entity;
 
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.annotation.Testable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -25,4 +26,10 @@ public class CrudTest {
 		Student student = new Student("Tester",21,"BBA");
 		studentRepository.save(student);
 	}
+	@Test
+	public void delete() {
+		studentRepository.deleteById(2);
+		System.out.print("Delete");
+	}
 }
+ 
