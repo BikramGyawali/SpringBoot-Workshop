@@ -10,14 +10,19 @@ public class CrudTest {
 	
 	@Autowired
 	StudentRepository studentRepository;
-//	
-//	@Test
-//	public void getRows() {
-//		System.out.println(studentRepository.findAll());
-//	}
+	
+	@Test
+	public void getRows() {
+		System.out.println(studentRepository.findAll());
+	}
 	@Test
 	public void getSingleRow() {
 		System.out.println(studentRepository.findById(2));
 	}
 	
+	@Test
+	public void insert() {
+		Student student = new Student("Tester",21,"BBA");
+		studentRepository.save(student);
+	}
 }
